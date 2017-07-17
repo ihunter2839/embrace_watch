@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context="com.embrace.embrace_watch.TestTimer"
+    tools:deviceIds="wear_round">
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/test_timer_center_space"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/test_timer_center_space"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/test_timer_start_button"
+            android:background="@drawable/play_button"
+            android:backgroundTint="@color/green"
+            android:layout_weight="1"
+            android:onClick="startTimer"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/test_timer_stop_button"
+            android:background="@drawable/stop_button"
+            android:backgroundTint="@color/red"
+            android:layout_weight="1"
+            android:onClick="endTimer"/>
+
+    </LinearLayout>
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test_timer_timer"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="40sp" />
+
+</RelativeLayout>

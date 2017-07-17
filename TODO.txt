@@ -1,0 +1,9 @@
+TODO - a list of work to be done
+
+--TESTING CYCLE: StartTest --> TestTimer --> ScoreTest
+
+--Create scoring screen. Possibly combine scoring screen and timing screen into one, replace the chronometer with scoring slider once time has completed.
+
+--Create method to pass relevant test details to the testing cycle. Need to display instructions for test, time associated with the test, and outlines for test scoring.
+
+--What about additional fields, such as counters for balance related events (putting a foot down, holding on to object)  
