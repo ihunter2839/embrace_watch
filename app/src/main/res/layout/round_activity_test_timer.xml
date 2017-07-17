@@ -35,7 +35,7 @@
             android:background="@drawable/stop_button"
             android:backgroundTint="@color/red"
             android:layout_weight="1"
-            android:onClick="endTimer"/>
+            android:onClick="stopTimer"/>
 
     </LinearLayout>
 
@@ -47,5 +47,6 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:textSize="40sp" />
+
 
 </RelativeLayout>
