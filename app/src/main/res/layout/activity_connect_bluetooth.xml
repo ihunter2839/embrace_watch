@@ -3,6 +3,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bluetooth_device_list"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+    </ListView>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bluetooth_device_list_spinner"
+        android:layout_below="@id/bluetooth_device_list" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,13 +33,5 @@
         android:layout_above="@id/connect_bt_button"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"/>
-
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/bluetooth_device_list"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true">
-    </ListView>
 
 </RelativeLayout>
